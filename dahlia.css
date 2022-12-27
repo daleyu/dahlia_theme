@@ -1,9 +1,9 @@
 /*
-author: jyzhu;
+author: Dale Yu;
+feel free to use it and pull any changes you want.
 
-I take the color palette of Evangelion.
+Inspired by: Dracula, and eva. 
 
-And this code is inspired by both `bear-dracula` and `mint-dark`.
 */
 
 :root {
@@ -438,6 +438,64 @@ footer.ty-footer {
 
 #recent-file-panel-action-btn {
   background-color: var(--bg-color);
+}
+
+/* remove divider outline */
+.dropdown-menu{
+  border: 0px;
+}
+
+/* word count */
+#footer-word-count-info{
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/* spell checker */
+#spell-check-panel{
+  display:block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.ty-show-spell-check #spell-check-panel{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* mermaid flowchart */
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+.node path {
+  fill: var(--bg-color) !important;
+  stroke: var(--text-color) !important
+}
+.edgePath .path{
+  stroke: var(--text-color) !important;
+}
+.label{
+  color: var(--text-color) !important;
+}
+.edgeLabel rect{
+  fill: transparent !important;
+}
+.cluster rect { 
+  fill: var(--bg-color) !important;
+  stroke: var(--text-color) !important;
+}
+
+/* mermaid sequence diagram */
+text.actor{
+  fill: var(--text-color) !important;
+}
+.messageLine0,
+.messageLine1 {
+  stroke: var(--text-color) !important;
 }
 
 /* preferences */
