@@ -203,7 +203,7 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
   display: block;
   font-weight:bold;
-  color: #8ce360;
+  color:#9d56ae;
 }
 
 h1 {
@@ -211,7 +211,7 @@ h1 {
   line-height: 110%;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
-  border-bottom: 1px solid #8ce360;
+  border-bottom: 1px solid #9d56ae;
 }
 
 h2 {
@@ -328,7 +328,7 @@ ol:last-child {
   position: absolute;
   top: 2px;
   content: "•";
-  color: #9d56ae;
+  color:#8ce360;
   display: inline-block;
   margin-left: -20px;
   margin-right: 20px;
@@ -361,7 +361,7 @@ ol:last-child {
 #write ol > li:not([class*=task-list-item]):before {
   content: counter(ol_counter) ".";
   counter-increment: ol_counter;
-  color: #9d56ae;
+  color: #8ce360;
   position: absolute;
   margin-left: -22px;
   margin-right: 4px;
