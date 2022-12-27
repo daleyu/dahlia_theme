@@ -32,6 +32,98 @@ Inspired by: Dracula, and eva.
   --search-select-text-color: #9d56ae;
   --heading-char-color: #9d56ae;
   --sequence-theme: simple;
+
+
+  /* Dracula colors and specs to be changed */
+    /*dracula official spec colors */
+    --dracula-background: rgb(40, 42, 54);
+    --dracula-current-line: rgb(68, 71, 90);
+    --dracula-foreground: rgb(248, 248, 242);
+    --dracula-comment: rgb(98, 114, 164);
+    --dracula-cyan: rgb(139, 233, 253);
+    --dracula-green: rgb(80, 250, 123);
+    --dracula-orange: rgb(255, 184, 108);
+    --dracula-pink: rgb(255, 121, 198);
+    --dracula-purple: rgb(189, 147, 249);
+    --dracula-red: rgb(255, 85, 85);
+    --dracula-yellow: rgb(241, 250, 140);
+  
+    /* dracula custom colors for typora */
+    --dracula-foreground-fade: rgba(248, 248, 242, 0.5);
+    --dracula-background-dark: rgb(32, 34, 39);
+  
+    /* dark color for background*/
+    /* default color */
+    --bg-color1: var(--dracula-background);
+    /* for most panel, context, header, etc */
+    --bg-color2: var(--dracula-background-dark);
+    /* for toc and table edit panel */
+    --bg-color3: var(--dracula-background-dark);
+    /* for tips */
+    --bg-color4: var(--dracula-current-line);
+    
+    /* for blockquote, codeblock, input, etc */
+    --bg-color5: var(--dracula-background-dark);
+    /* light color for text and icon*/
+    /* default color */
+    --text-color1: var(--dracula-foreground);
+    /* for text on panel */
+    --text-color2: var(--dracula-foreground);
+    /* for checkbox and radio */
+    --text-color3: var(--dracula-current-line);
+    
+    /* for tips */
+    --text-color4: var(--dracula-foreground);
+    /* for focus mode */
+    --text-color5: var(--dracula-foreground-fade);
+    /* link color */
+    --link-color: var(--dracula-cyan);
+    /* table color */
+    --table-border-color: var(--dracula-foreground);
+    --table-thead-color: var(--dracula-current-line);
+    --table-bg-color: var(--dracula-background);
+    --table-bg-darker-color: var(--dracula-background-dark);
+    /* hover color */
+    /* default hover background color */
+    --hover-bg-color1: var(--dracula-current-line);
+    /* for input item */
+    --hover-bg-color2: var(--dracula-current-line);
+    /* for button on toc and table edit panel */
+    --hover-bg-color3: var(--dracula-current-line);
+    /* default hover text color */
+    --hover-text-color: var(--dracula-pink);
+    /* active color */
+    --active-color: var(--hover-bg-color1);
+    /* input color */
+    --input-color: var(--dracula-current-line);
+    /* menu divider color */
+    --menu-divider-color: var(--dracula-foreground);
+    /* scrollbar color */
+    --scrollbar-thumb-color: var(--menu-divider-color);
+    --scrollbar-track-color: var(--dracula-background);
+    /* theme select color */
+    --theme-select-color: var(--dracula-current-line);
+    --button-color: var(--dracula-comment);
+    --select-color: var(--dracula-background);
+    /* focus color */
+    --focus-color: var(--dracula-cyan);
+    --focus-ring-color: var(--focus-color);
+    /* codeblock color */
+    --code-red-color: var(--dracula-pink);
+    --code-yellow-color: var(--dracula-yellow);
+    --code-cyan-color: var(--dracula-cyan);
+    --code-blue-color: var(--dracula-cyan);
+    --code-purple-color: var(--dracula-purple);
+    --code-orange-color: var(--dracula-yellow);
+    --code-green-color: var(--dracula-green);
+    --code-grey-color: var(--dracula-comment);
+  
+    --code-select-bg-color: var(--dracula-comment);
+    --code-cursor-color: var(--dracula-current-line);
+    /* implicit selection text bg color */
+    --select-text-bg-color: var(--dracula-comment);
+    /* implicit button color */
+    --primary-color: var(--button-color)
 }
 
 
@@ -497,6 +589,377 @@ text.actor{
 .messageLine1 {
   stroke: var(--text-color) !important;
 }
+rect[class*="activation"] {
+  fill: var(--bg-color) !important;
+}
+
+.actor-line {
+  stroke-width: 1px !important;
+}
+
+.labelBox {
+  stroke: var(--dracula-current-line) !important;
+}
+
+.labelText {
+  fill: var(--text-color1) !important;
+}
+
+.loopText {
+  fill: var(--text-color1) !important;
+}
+
+.loopLine {
+  stroke: var(--dracula-current-line) !important;
+}
+
+.note {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.noteText {
+  fill: var(--text-color1) !important;
+}
+
+/* mermaid class */
+g.classGroup text {
+  fill: var(--text-color) !important;
+}
+
+g.classGroup rect {
+  stroke: var(--menu-divider-color) !important;
+  fill: var(--bg-color2) !important;
+}
+
+g.classGroup line {
+  stroke: var(--menu-divider-color) !important;
+}
+
+.classLabel .label {
+  fill: var(--text-color1) !important;
+}
+
+.relation {
+  stroke: var(--menu-divider-color) !important;
+}
+
+#compositionStart,
+#compositionEnd,
+#aggregationStart,
+#aggregationEnd,
+#dependencyStart,
+#dependencyStart,
+#extensionStart,
+#extensionEnd {
+  fill: var(--menu-divider-color) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.cardinality text {
+  fill: var(--text-color) !important;
+}
+
+/* mermaid state v1 */
+.stateGroup rect,
+.stateGroup line {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.stateGroup text {
+  fill: var(--text-color) !important;
+}
+
+.stateGroup circle {
+  fill: var(--bg-color4) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.stateGroup .composit {
+  fill: var(--dracula-background-dark) !important;
+}
+
+.stateGroup .alt-composit {
+  fill: var(--dracula-background-dark) !important;
+}
+
+.state-note rect {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.state-note text {
+  fill: var(--text-color) !important;
+}
+
+.stateLabel text {
+  fill: var(--text-color) !important;
+}
+
+#dependencyEnd {
+  fill: var(--menu-divider-color) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+/* mermaid state v2*/
+.state-start {
+  fill: var(--bg-color4) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.state-end {
+  stroke: var(--menu-divider-color) !important;
+  fill: var(--bg-color4) !important;
+}
+
+.divider {
+  stroke: var(--menu-divider-color) !important;
+  fill: var(--bg-color5) !important;
+  fill: var(--dracula-background-dark) !important;
+}
+
+.fork-join {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.title-state {
+  fill: var(--bg-color2) !important;
+}
+
+.statediagram-cluster .outer {
+  stroke: var(--menu-divider-color) !important;
+}
+
+.statediagram-cluster .inner {
+  fill: var(--dracula-background-dark) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.statediagram-cluster-alt .inner {
+  fill: var(--dracula-background-dark) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.transition {
+  stroke: var(--menu-divider-color) !important;
+}
+
+#statediagram-barbEnd {
+  fill: var(--menu-divider-color) !important;
+}
+
+/* mermaid journey */
+.journey-section {
+  fill: var(--bg-color5) !important;
+  stroke: var(--menu-divider-color) !important;
+}
+
+.journey-section div {
+  color: var(--text-color) !important;
+}
+
+.task {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 1px !important;
+}
+
+.task div {
+  color: var(--text-color) !important;
+}
+
+#arrowhead {
+  fill: var(--menu-divider-color) !important;
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 0.3px !important;
+}
+
+pre[mermaid-type="journey"] line {
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 2px !important;
+}
+
+pre[mermaid-type="journey"] text {
+  fill: var(--text-color1) !important;
+}
+
+pre[mermaid-type="journey"] g path,
+pre[mermaid-type="journey"] g line {
+  fill: var(--dracula-comment) !important;
+  stroke: var(--text-color) !important;
+}
+
+.task-line {
+  stroke: var(--menu-divider-color) !important;
+}
+
+/* mermaid erDiagram */
+pre[mermaid-type="erDiagram"] rect {
+  fill: var(--bg-color2) !important;
+}
+
+pre[mermaid-type="erDiagram"] text {
+  fill: var(--text-color) !important;
+}
+
+pre[mermaid-type="erDiagram"] path {
+  stroke: var(--menu-divider-color) !important;
+}
+
+#ZERO_OR_ONE_START circle,
+#ZERO_OR_ONE_END circle,
+#ZERO_OR_MORE_START circle,
+#ZERO_OR_MORE_END circle {
+  fill: var(--bg-color) !important;
+}
+
+/* mermaid gantt */
+.titleText {
+  fill: var(--text-color1) !important;
+}
+
+.section0,
+.section2 {
+  fill: var(--table-thread-color) !important;
+}
+
+.section1,
+.section3 {
+  fill: var(--table-bg-color) !important;
+}
+
+.task0,
+.task1,
+.task2,
+.task3 {
+  fill: var(--dracula-current-line) !important;
+  stroke: var(--dracula-current-line) !important;
+}
+
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+  fill: var(--text-color2) !important;
+}
+
+.active0,
+.active1,
+.active2,
+.active3 {
+  fill: var(--dracula-current-line) !important;
+  stroke: var(--dracula-current-line) !important;
+}
+
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+  fill: var(--text-color2) !important;
+}
+
+.done0,
+.done1,
+.done2,
+.done3 {
+  fill: var(--dracula-background-dark) !important;
+  stroke: var(--dracula-background-dark) !important;
+}
+
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+  fill: var(--dracula-current-line) !important;
+  stroke: var(--text-color1) !important;
+}
+
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+  fill: var(--dracula-current-line) !important;
+  stroke: var(--text-color1) !important;
+}
+
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+  fill: var(--dracula-background-dark) !important;
+  stroke: var(--text-color1) !important;
+}
+
+.taskTextOutside0,
+.taskTextOutside2,
+.taskTextOutside1,
+.taskTextOutside3 {
+  fill: var(--text-color1) !important;
+}
+
+.grid text {
+  fill: var(--dracula-foreground) !important;
+}
+
+.today {
+  stroke: var(--text-color1) !important;
+}
+
+/* mermaid pie chart */
+g.legend>text {
+  fill: var(--text-color1) !important;
+}
+
+g.legend>rect {
+  stroke: var(--bg-color) !important;
+}
+
+g>path {
+  stroke: var(--bg-color) !important;
+}
+
+g>text.slice {
+  fill: var(--bg-color) !important;
+}
+
+/* flow diagram */
+.md-fences[lang="flow"] .md-diagram-panel-preview rect {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 1.2 !important;
+}
+
+.md-fences[lang="flow"] .md-diagram-panel-preview path {
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 1.2 !important;
+}
+
+.md-fences[lang="flow"] #cond {
+  fill: var(--bg-color2) !important;
+}
+
+/* sequence diagram */
+.md-fences[lang="sequence"] .md-diagram-panel-preview rect:not([fill="none"]) {
+  fill: var(--bg-color2) !important;
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 1.2 !important;
+}
+
+.md-fences[lang="sequence"] .md-diagram-panel-preview path {
+  fill: var(--menu-divider-color) !important;
+  stroke: var(--menu-divider-color) !important;
+  stroke-width: 1.2 !important;
+}
+
+.md-fences[lang="sequence"] text,
+.md-fences[lang="flow"] text {
+  font-family: "Consolas" !important;
+}
+
+
+
 
 /* preferences */
 .ty-preferences .window-header{
@@ -518,12 +981,6 @@ text.actor{
   background-color: var(--item-hover-bg-color);
   border: none;
 }
-
-
-
-
-
-
 
 #write del, #write s {
   color: #b2b8a3;
