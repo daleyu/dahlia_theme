@@ -17,7 +17,14 @@ For a Preview click [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Screenshots 
 
-<img src="/Users/daleyu/dahlia_theme/dahlia1.png" alt="dahlia1" style="zoom:67%;" />
+​								<img src="/Users/daleyu/dahlia_theme/dahlia1.png" alt="dahlia1" style="zoom:67%;" /> 
+ 
+
+| Text and Lists                                               | Diagrams and Code                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="/Users/daleyu/dahlia_theme/test2.png" alt="test2" style="zoom: 67%;"/> | <img src="/Users/daleyu/dahlia_theme/test1.png" alt="test1" style="zoom: 50%;" /> |
+
+
 
 ## Installation and Use
 
