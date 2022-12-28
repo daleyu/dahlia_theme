@@ -6,7 +6,7 @@ Eye-friendly dark theme for [Typora](https://typora.io/) Markdown Editor. Custom
 
 For a Preview click [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-## 																<img src="/Users/daleyu/dahlia_theme/images/dahlia.png" alt="dahlia" style="zoom: 50%;" />
+![dahlia](images/dahlia.png)
 
 ## Features
 
@@ -17,12 +17,14 @@ For a Preview click [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Screenshots 
 
-​								<img src="/Users/daleyu/dahlia_theme/images/dahlia1.png" alt="dahlia1" style="zoom:67%;" /> 
+​								<img src="images/dahlia1.png" alt="dahlia_demo" style="zoom:67%;" />							
+
  
+
 
 | Text and Lists                                               | Diagrams and Code                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="/Users/daleyu/dahlia_theme/images/test2.png" alt="test2" style="zoom: 67%;"/> | <img src="/Users/daleyu/dahlia_theme/images/test1.png" alt="test1" style="zoom: 50%;" /> |
+| <img src="images/test2.png" alt="test2" style="zoom: 67%;"/> | <img src="images/test1.png" alt="test1" style="zoom: 50%;" /> |
 
 
 
