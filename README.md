@@ -39,7 +39,7 @@ For a Preview click [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 - Give support for more of typora plug-ins
 - Add support for graphs and code segments
-- 
+- Needs added support for mermaid Class Diagrams 
 
 ## References
 
