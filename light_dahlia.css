@@ -64,6 +64,8 @@ html, body {
 	background-color: #f3f2ee;
 	font-family: "PT Serif", 'Times New Roman', Times, serif;
 	color: #1f0909;
+    letter-spacing: 0;
+    margin: 0;
 	line-height: 1.5em;
 }
 
@@ -133,6 +135,8 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
+    display:block;
+    color:rgba(32, 43, 51, 0.63);
 }
 h1 {
 	font-size: 1.875em;
@@ -145,20 +149,20 @@ h2,
 h3 {
 	font-size: 1.3125em;
 	/*21 / 16*/
-	line-height: 1.15;
+	line-height: 1.05;
 	/*24 / 21*/
-	margin-top: 2.285714em;
+	margin-top: 1em;
 	/*48 / 21*/
-	margin-bottom: 1.15em;
+	margin-bottom: .83em;
 	/*24 / 21*/
 }
 h3 {
 	font-weight: normal;
 }
 h4 {
-	font-size: 1.125em;
+	font-size: 1em;
 	/*18 / 16*/
-	margin-top: 2.67em;
+	margin-top: 1em;
 	/*48 / 18*/
 }
 h5,
@@ -199,10 +203,10 @@ h6 {
 /* blockquote */
 
 blockquote {
-	font-style: italic;
-	border-left: 5px solid;
+    border-left: 0.2rem solid #9d56ae;
 	margin-left: 2em;
-	padding-left: 1em;
+    font-size: 1.2rem;
+	padding-left: 2rem;
 }
 /* lists */
 
